@@ -1,16 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
-int factoriel(int a, int total);
+
+
+int factorielle(int a){
+    if(a-1 == 0){
+        return a;
+    }else{
+        return factorielle(a-1) * a;
+    }
+
+}
 
 
 int main()
 {
-    int total = 1;
-
-    for(int i=1;i<=3;i++){
-        total = total*i;
-    }
-
-    printf("%i", total);
-    return 0;
+    printf("%i", factorielle(5));
 }
