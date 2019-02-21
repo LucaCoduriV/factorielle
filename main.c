@@ -1,18 +1,25 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+factorielle(int val_user){
+    int i;
 
-int factorielle(int a){
-    if(a-1 == 0){
-        return a;
-    }else{
-        return factorielle(a-1) * a;
+    for(i=val_user-1; i>=1; i--){
+        val_user *= i;
     }
 
+    printf("\n\n%i\n", val_user);
 }
-
 
 int main()
 {
-    printf("%i", factorielle(5));
+    int val_user;
+
+    printf("Entrez un nombre: ");
+    scanf("%i", &val_user);
+
+
+    factorielle(val_user);
+
+    return EXIT_SUCCESS;
 }
