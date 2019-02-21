@@ -1,15 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int factorielle(int val_user){
-    int i;
 
-    for(i=val_user-1; i>=1; i--){
-        val_user *= i;
+int factorielle(int a){
+    if(a-1 == 0){
+        return a;
+    }else{
+        return factorielle(a-1) * a;
     }
-
-    return val_user;
 }
+
 
 int main()
 {
@@ -19,7 +19,6 @@ int main()
     scanf("%i", &val_user);
 
     //fonction factorielle
-    printf("\n\n%i\n", factorielle(val_user));
-
+    printf("%i", factorielle(val_user));
     return EXIT_SUCCESS;
 }
