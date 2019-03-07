@@ -21,3 +21,4 @@ int main()
     printf("%i", factorielle(val_user));
     return EXIT_SUCCESS;
 }
+//test
