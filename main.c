@@ -3,11 +3,10 @@
 
 
 int factorielle(int a){
-    if(a-1 == 0){
-        return a;
-    }else{
-        return factorielle(a-1) * a;
+    if(a == 1){
+        return 1;
     }
+        return (factorielle(a-1) * a);
 }
 
 

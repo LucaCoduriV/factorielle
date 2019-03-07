@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1551952569 source:c:\users\luca.coduri\documents\projectc\facto\main.c
+	<stdio.h>
+	<stdlib.h>
+
